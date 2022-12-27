@@ -8,7 +8,7 @@
 You may now run the `mi.sh` file.
 ### Updates:
 Update Method 1: (recommended)
-(in the mi.sh folder:) `git pull`
+(in the mi.sh folder) `git pull`
 
 # Configuration
 There are no configuration Options at the Moment.
