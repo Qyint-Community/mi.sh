@@ -1,2 +1,4 @@
-# mi.sh
-Main Tool for everything.
+# Qyint-Community / mi.sh
+- - -
+
+More Information coming soonTM
