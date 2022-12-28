@@ -3,14 +3,14 @@
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v1.1.0 │"
+    echo "│ mi.sh │ │ v1.2.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v1.1.0 │"
+    echo "│   info   │        v1.2.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -314,13 +314,25 @@ qyint_community_mish () {
     echo "│ coming  │ soon                                │"
     echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
-    echo "│ Sorry, there are no ways │"
-    echo "│ to interact with this.   │"
-    echo "│ Press any key to return. │"
-    echo "│ Ctrl+C to exit.          │"
+    echo "│     SELECT A SCRIPT!     │"
     echo "╰──────────────────────────╯"
-    read -n 1 -r -p " "
-    qyint_community_0
+    echo "╭───┬─────────╮"
+    echo "│ 1 │ pgp-key │"
+    echo "├───┼─────────┤"
+    echo "│ 0 │ back    │"
+    echo "╰───┴─────────╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "1" ]; then
+        clear && cat ./extra/mish-pgp-public-key
+    elif [ "$SELECT" == "pgp-key" ]; then
+        clear && cat ./extra/mish-pgp-public-key
+    elif [ "$SELECT" == "2" ]; then
+        qyint_community_0
+    elif [ "$SELECT" == "back" ]; then
+        qyint_community_0
+    else
+        qyint_community_select_failed
+    fi
 }
 qyint_community_mimi () {
     globalbar
@@ -367,13 +379,25 @@ qyint_community_slake () {
     echo "│ Discord │ Slake#9678 │"
     echo "╰─────────┴────────────╯"
     echo "╭──────────────────────────╮"
-    echo "│ Sorry, there are no ways │"
-    echo "│ to interact with this.   │"
-    echo "│ Press any key to return. │"
-    echo "│ Ctrl+C to exit.          │"
+    echo "│     SELECT A SCRIPT!     │"
     echo "╰──────────────────────────╯"
-    read -n 1 -r -p " "
-    qyint_community_0
+    echo "╭───┬─────────╮"
+    echo "│ 1 │ pgp-key │"
+    echo "├───┼─────────┤"
+    echo "│ 0 │ back    │"
+    echo "╰───┴─────────╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "1" ]; then
+        clear && cat ./extra/slake-pgp-public-key
+    elif [ "$SELECT" == "pgp-key" ]; then
+        clear && cat ./extra/slake-pgp-public-key
+    elif [ "$SELECT" == "2" ]; then
+        qyint_community_0
+    elif [ "$SELECT" == "back" ]; then
+        qyint_community_0
+    else
+        qyint_community_select_failed
+    fi
 }
 qyint_community_lanina () {
     globalbar
