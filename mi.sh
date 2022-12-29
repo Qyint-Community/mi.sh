@@ -3,14 +3,14 @@
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v1.2.1 │"
+    echo "│ mi.sh │ │ v1.3.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v1.2.1 │"
+    echo "│   info   │        v1.3.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -21,7 +21,8 @@ mainloop () {
     echo "╰──────────────────────────╯"
     echo "╭───┬────────────────────┬─╮"
     echo "│ 1 │ qyint-community    │ │"
-    echo "│ 2 │ qyint-license      │ │"
+    echo "│ 2 │ qyint-pgp-keys     │ │"
+    echo "│ 3 │ qyint-license      │ │"
     echo "╰───┴────────────────────┴─╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
@@ -29,6 +30,10 @@ mainloop () {
     elif [ "$SELECT" == "qyint-community" ]; then
         qyint_community_0
     elif [ "$SELECT" == "2" ]; then
+        qyint_pgp_keys
+    elif [ "$SELECT" == "qyint-pgp-keys" ]; then
+        qyint_pgp_keys
+    elif [ "$SELECT" == "3" ]; then
         qyint_license
     elif [ "$SELECT" == "qyint-license" ]; then
         qyint_license
@@ -56,7 +61,7 @@ select_failed () {
 qyint_community_0 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ index │"
+    echo "│ qyint │ │ v3.0.0 │ │ index │"
     echo "╰───────╯ ╰────────╯ ╰───────╯"
     echo "╭─────────┬─────────────────────────────────╮"
     echo "│ welcome │                                 │"
@@ -118,7 +123,7 @@ qyint_community_0 () {
 qyint_community_select_failed () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ err │"
+    echo "│ qyint │ │ v3.0.0 │ │ err │"
     echo "╰───────╯ ╰────────╯ ╰─────╯"
     echo "╭──────────────────────────╮"
     echo "│ Input not recognized.    │"
@@ -131,7 +136,7 @@ qyint_community_select_failed () {
 qyint_community_1 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ community-feed │"
+    echo "│ qyint │ │ v3.0.0 │ │ community-feed │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭─────────────────────────────────────╮"
     echo "│ Sorry, the Community Feed is not    │"
@@ -157,7 +162,7 @@ qyint_community_1 () {
 qyint_community_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ social │"
+    echo "│ qyint │ │ v3.0.0 │ │ social │"
     echo "╰───────╯ ╰────────╯ ╰────────╯"
     echo "╭─────────┬────────────────────────────────────┬─╮"
     echo "│ Discord │ https://dsc.gg/qyint               │ │"
@@ -180,7 +185,7 @@ qyint_community_2 () {
 qyint_community_3 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ links │"
+    echo "│ qyint │ │ v3.0.0 │ │ links │"
     echo "╰───────╯ ╰────────╯ ╰───────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
@@ -213,7 +218,7 @@ qyint_community_3 () {
 qyint_community_3_1 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ links/conversation rules │"
+    echo "│ qyint │ │ v3.0.0 │ │ links/conversation rules │"
     echo "╰───────╯ ╰────────╯ ╰──────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Rules arent copied here. │"
@@ -227,7 +232,7 @@ qyint_community_3_1 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ links/decision making │"
+    echo "│ qyint │ │ v3.0.0 │ │ links/decision making │"
     echo "╰───────╯ ╰────────╯ ╰───────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -241,7 +246,7 @@ qyint_community_3_2 () {
 qyint_community_4 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff │"
     echo "╰───────╯ ╰────────╯ ╰───────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
@@ -292,7 +297,7 @@ qyint_community_4 () {
 qyint_community_mish () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff / mish │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff / mish │"
     echo "╰───────╯ ╰────────╯ ╰──────────────╯"
     echo "╭──────┬────────────────────────────────────────╮"
     echo "│ mish │                                        │"
@@ -324,9 +329,17 @@ qyint_community_mish () {
     echo "╰───┴─────────╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
-        clear && cat ./extra/mish-pgp-public-key
+        if [ "$PGP_KEYS_DOWNLOADED" == "1" ]; then
+            clear && cat ./extra/mish-pgp-public-key
+        else
+            clear && echo "You have not downloaded the keys Repository."
+        fi
     elif [ "$SELECT" == "pgp-key" ]; then
-        clear && cat ./extra/mish-pgp-public-key
+        if [ "$PGP_KEYS_DOWNLOADED" == "1" ]; then
+            clear && cat ./extra/mish-pgp-public-key
+        else
+            clear && echo "You have not downloaded the keys Repository."
+        fi
     elif [ "$SELECT" == "2" ]; then
         qyint_community_0
     elif [ "$SELECT" == "back" ]; then
@@ -338,7 +351,7 @@ qyint_community_mish () {
 qyint_community_mimi () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff / mini │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff / mini │"
     echo "╰───────╯ ╰────────╯ ╰──────────────╯"
     echo "╭──────┬────────────────────────────────────────╮"
     echo "│ mini │                                        │"
@@ -371,9 +384,17 @@ qyint_community_mimi () {
     echo "╰───┴─────────╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
-        clear && cat ./extra/mini-pgp-public-key
+        if [ "$PGP_KEYS_DOWNLOADED" == "1" ]; then
+            clear && cat ./extra/mini-pgp-public-key
+        else
+            clear && echo "You have not downloaded the keys Repository."
+        fi
     elif [ "$SELECT" == "pgp-key" ]; then
-        clear && cat ./extra/mini-pgp-public-key
+        if [ "$PGP_KEYS_DOWNLOADED" == "1" ]; then
+            clear && cat ./extra/mini-pgp-public-key
+        else
+            clear && echo "You have not downloaded the keys Repository."
+        fi
     elif [ "$SELECT" == "2" ]; then
         qyint_community_0
     elif [ "$SELECT" == "back" ]; then
@@ -387,7 +408,7 @@ qyint_community_mimi () {
 qyint_community_slake () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff / slake │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff / slake │"
     echo "╰───────╯ ╰────────╯ ╰───────────────╯"
     echo "╭───────┬──────────────╮"
     echo "│ slake │              │"
@@ -409,9 +430,17 @@ qyint_community_slake () {
     echo "╰───┴─────────╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
-        clear && cat ./extra/slake-pgp-public-key
+        if [ "$PGP_KEYS_DOWNLOADED" == "1" ]; then
+            clear && cat ./extra/slake-pgp-public-key
+        else
+            clear && echo "You have not downloaded the keys Repository."
+        fi
     elif [ "$SELECT" == "pgp-key" ]; then
-        clear && cat ./extra/slake-pgp-public-key
+        if [ "$PGP_KEYS_DOWNLOADED" == "1" ]; then
+            clear && cat ./extra/slake-pgp-public-key
+        else
+            clear && echo "You have not downloaded the keys Repository."
+        fi
     elif [ "$SELECT" == "2" ]; then
         qyint_community_0
     elif [ "$SELECT" == "back" ]; then
@@ -423,7 +452,7 @@ qyint_community_slake () {
 qyint_community_lanina () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff / lanina │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff / lanina │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬──────────────────────────────────────╮"
     echo "│ lanina │                       [ she / they ] │"
@@ -452,7 +481,7 @@ qyint_community_lanina () {
 qyint_community_eulenmensch () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff / eulenmensch │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff / eulenmensch │"
     echo "╰───────╯ ╰────────╯ ╰─────────────────────╯"
     echo "╭─────────────┬─────────────────────────────────╮"
     echo "│ eulenmensch │                                 │"
@@ -477,7 +506,7 @@ qyint_community_eulenmensch () {
 qyint_community_linmax () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff / linmax │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff / linmax │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬──────────────────────────────────────╮"
     echo "│ linmax │                                      │"
@@ -502,7 +531,7 @@ qyint_community_linmax () {
 qyint_community_lord_flo () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────────╮"
-    echo "│ qyint │ │ v2.2.0 │ │ staff / lord_flo │"
+    echo "│ qyint │ │ v3.0.0 │ │ staff / lord_flo │"
     echo "╰───────╯ ╰────────╯ ╰──────────────────╯"
     echo "╭──────────┬────────────────────────────────────╮"
     echo "│ lord_flo │                                    │"
@@ -526,6 +555,42 @@ qyint_community_lord_flo () {
     echo "╰──────────────────────────╯"
     read -n 1 -r -p " "
     qyint_community_0
+}
+
+#
+#
+# QYINT-PGP-KEYS
+#
+#
+
+qyint_pgp_keys () {
+    globalbar
+    echo "╭──────────────────────────╮"
+    echo "│     PGP-KEYS // MENU     │"
+    echo "╰──────────────────────────╯"
+    echo "╭───┬────────────────────┬─╮"
+    echo "│ 1 │ download-keys      │ │"
+    echo "│ 2 │ update-keys        │ │"
+    echo "╰───┴────────────────────┴─╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "1" ]; then
+        mkdir -p ./extra
+        cd extra
+        git clone https://github.com/Qyint-Community/keys .
+    elif [ "$SELECT" == "download-keys" ]; then
+        mkdir -p ./extra
+        cd extra
+        git clone https://github.com/Qyint-Community/keys .
+    elif [ "$SELECT" == "2" ]; then
+        cd extra
+        git pull
+    elif [ "$SELECT" == "update-keys" ]; then
+        cd extra
+        git pull
+    else
+        select_failed
+    fi
+    mainloop
 }
 
 #
