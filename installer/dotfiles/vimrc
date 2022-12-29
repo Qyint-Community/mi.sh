@@ -1,0 +1,45 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin('~/.vim/plugged')
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'cocopon/iceberg.vim'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'sjl/badwolf'
+Plugin 'lifepillar/vim-solarized8'
+Plugin 'scheakur/vim-scheakur'
+Plugin 'Badacadabra/vim-archery'
+
+Plugin 'sheerun/vim-polyglot'
+
+Plugin 'jiangmiao/auto-pairs'   " Auto Pairs"
+Plugin 'preservim/nerdtree'
+
+call vundle#end()
+filetype plugin indent on
+
+let g:AutoPairsShortcutToggle = '<C-P>'
+
+let NERDTreeShowBookmarks = 1
+let NERDTreeShowHidden = 1
+let NERDTreeShowLineNumbers = 0
+let NERDTreeMinimalMenu = 1
+let NERDTreeWinPos = "left"
+let NERDTreeWinSize = 31
+
+set nu
+syntax on
+set incsearch
+set hlsearch
+set splitbelow
+set mouse=a
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+colorscheme industry
