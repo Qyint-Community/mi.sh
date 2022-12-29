@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# DO NOT TOUCH THESE CONFIG OPTIONS, EDIT THEM IN mi.conf!
+KEY_DIRECTORY='./extra'
+if [ -d "$KEY_DIRECTORY" ]; then
+    PGP_KEYS_DOWNLOADED="1"
+else
+    PGP_KEYS_DOWNLOADED="0"
+fi
+source ./mi.conf
+
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
