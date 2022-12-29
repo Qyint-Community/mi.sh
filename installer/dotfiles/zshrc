@@ -1,0 +1,72 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH=/usr/share/oh-my-zsh/
+
+ZSH_THEME="avit"
+
+plugins=(git)
+
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+  source $ZSH/oh-my-zsh.sh
+fi
+export PAGER='most'
+
+if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+setopt GLOB_DOTS
+unsetopt SHARE_HISTORY
+[[ $- != *i* ]] && return
+
+export HISTCONTROL=ignoreboth:erasedups
+
+export EDITOR='vim'
+export VISUAL='vim'
+
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
+
+#LS & CD Commands
+alias ll='ls -lAF'
+alias la='ls -lAF'
+alias .='ranger'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+# GIT Commands
+alias g='git clone'
+alias gc='git commit'
+alias ga='git add'
+alias gi='git init'
+alias gp='git push'
+alias gf='git fetch'
+# OTHER
+alias x='chmod +x'
+alias m='btop'
+alias d='gparted'
+alias f='fdisk'
+alias wt='w3m'
+alias mnt='sudo mount'
+alias umnt='sudo umount'
+alias lsd='lsblk'
+# APP-Shortcuts
+# REPLACED BY WINDOW MANAGER SHORTCUTS!
+
+###
+
+alias matrix='cmatrix -a -b -k -C white'
+alias k='killall'
+alias update='sudo pacman -Syu'
+
+date +"%A%n%d.%m.%Y%n%u %H:%M"
+
+
