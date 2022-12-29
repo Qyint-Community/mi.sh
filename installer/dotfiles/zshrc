@@ -67,6 +67,7 @@ alias matrix='cmatrix -a -b -k -C white'
 alias k='killall'
 alias update='sudo pacman -Syu'
 
+clear
 date +"%A%n%d.%m.%Y%n%u %H:%M"
 
 
