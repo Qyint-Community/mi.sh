@@ -12,14 +12,14 @@ source ./mi.conf
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v1.4.0 │"
+    echo "│ mi.sh │ │ v1.5.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v1.4.0 │"
+    echo "│   info   │        v1.5.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -637,14 +637,19 @@ installers () {
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
     echo "╰──────────────────────────╯"
-    echo "╭───┬────────────────────┬─╮"
-    echo "│ 1 │ mimux-termux-setup │ │"
-    echo "╰───┴────────────────────┴─╯"
+    echo "╭───┬──────────────────────╮"
+    echo "│ 1 │ mimux-termux-setup   │"
+    echo "│ 2 │ miastools-installer  │"
+    echo "╰───┴──────────────────────╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
         installer_mimux
     elif [ "$SELECT" == "mimux-termux-setup" ]; then
         installer_mimux
+    elif [ "$SELECT" == "2" ]; then
+        installer_miastools
+    elif [ "$SELECT" == "maistools-installer" ]; then
+        installer_miastools
     else
         select_failed
     fi
@@ -676,6 +681,29 @@ installer_mimux () {
         cd installer
         chmod +x mimux-setup-termux.sh
         ./mimux-setup-termux.sh
+    else
+        select_failed
+    fi
+}
+installer_miastools () {
+    globalbar
+    echo "╭───────────────────────────────╮"
+    echo "│ miastools-installer           │"
+    echo "├───────────────────────────────┤"
+    echo "│ This Installer will install   │"
+    echo "│ the miastools Discord Bot and │"
+    echo "│ its dependencies.             │"
+    echo "│ python3 is reqired.           │"
+    echo "╰───────────────────────────────╯"
+    echo "╭────────────────────────╮"
+    echo "│ Enter 'install' to run │"
+    echo "╰────────────────────────╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "install" ]; then
+        clear
+        cd installer
+        chmod +x miastools-installer.sh
+        ./miastools-installer.sh
     else
         select_failed
     fi
