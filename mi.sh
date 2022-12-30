@@ -12,14 +12,14 @@ source ./mi.conf
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v1.5.0 │"
+    echo "│ mi.sh │ │ v1.6.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v1.5.0 │"
+    echo "│   info   │        v1.6.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -640,6 +640,7 @@ installers () {
     echo "╭───┬──────────────────────╮"
     echo "│ 1 │ mimux-termux-setup   │"
     echo "│ 2 │ miastools-installer  │"
+    echo "│ 3 │ miarch               │"
     echo "╰───┴──────────────────────╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
@@ -650,6 +651,10 @@ installers () {
         installer_miastools
     elif [ "$SELECT" == "maistools-installer" ]; then
         installer_miastools
+    elif [ "$SELECT" == "3" ]; then
+        installer_miarch
+    elif [ "$SELECT" == "miarch" ]; then
+        installer_miarch
     else
         select_failed
     fi
@@ -704,6 +709,27 @@ installer_miastools () {
         cd installer
         chmod +x miastools-installer.sh
         ./miastools-installer.sh
+    else
+        select_failed
+    fi
+}
+installer_mimux () {
+    globalbar
+    echo "╭───────────────────────────────╮"
+    echo "│ miarch                        │"
+    echo "├───────────────────────────────┤"
+    echo "│ You probably dont want to use │"
+    echo "│ this.                         │"
+    echo "╰───────────────────────────────╯"
+    echo "╭────────────────────────╮"
+    echo "│ Enter 'install' to run │"
+    echo "╰────────────────────────╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "install" ]; then
+        clear
+        cd installer
+        chmod +x miarch.sh
+        ./miarch.sh
     else
         select_failed
     fi
