@@ -12,14 +12,14 @@ source ./mi.conf
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v1.3.0 │"
+    echo "│ mi.sh │ │ v1.4.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v1.3.0 │"
+    echo "│   info   │        v1.4.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -32,6 +32,7 @@ mainloop () {
     echo "│ 1 │ qyint-community    │ │"
     echo "│ 2 │ qyint-pgp-keys     │ │"
     echo "│ 3 │ qyint-license      │ │"
+    echo "│ 4 │ installers         │ │"
     echo "╰───┴────────────────────┴─╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
@@ -46,6 +47,10 @@ mainloop () {
         qyint_license
     elif [ "$SELECT" == "qyint-license" ]; then
         qyint_license
+    elif [ "$SELECT" == "4" ]; then
+        installers
+    elif [ "$SELECT" == "installers" ]; then
+        installers
     else
         select_failed
     fi
@@ -615,6 +620,65 @@ qyint_license () {
     mainloop
 }
 
+#
+#
+# INSTALLERS
+#
+#
 
+installers () {
+    globalbar
+    echo "╭─────────────────────────╮"
+    echo "│ installers              │"
+    echo "├─────────────────────────┤"
+    echo "│ made by mish - for mish │"
+    echo "╰─────────────────────────╯"
+    echo ""
+    echo "╭──────────────────────────╮"
+    echo "│     SELECT A SCRIPT!     │"
+    echo "╰──────────────────────────╯"
+    echo "╭───┬────────────────────┬─╮"
+    echo "│ 1 │ mimux-termux-setup │ │"
+    echo "╰───┴────────────────────┴─╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "1" ]; then
+        installer_mimux
+    elif [ "$SELECT" == "mimux-termux-setup" ]; then
+        installer_mimux
+    else
+        select_failed
+    fi
+}
+installer_mimux () {
+    globalbar
+    echo "╭───────────────────────────────╮"
+    echo "│ mimux-termux-setup            │"
+    echo "├───────────────────────────────┤"
+    echo "│ This Installer will install   │"
+    echo "│ a set of Packages and will    │"
+    echo "│ configure your Termux Install │"
+    echo "│ Note:                         │"
+    echo "│ You might not want this setup │"
+    echo "│ This Setup was made by mish,  │"
+    echo "│ it is primarily used to:      │"
+    echo "│ - host a miastools instance   │"
+    echo "│ - edit files in vim           │"
+    echo "│ Note:                         │"
+    echo "│ Run the miastools-installer   │"
+    echo "│ afterwards to install the bot │"
+    echo "╰───────────────────────────────╯"
+    echo "╭────────────────────────╮"
+    echo "│ Enter 'install' to run │"
+    echo "╰────────────────────────╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "install" ]; then
+        clear
+        cd installer
+        chmod +x mimux-setup-termux.sh
+        ./mimux-setup-termux.sh
+    else
+        select_failed
+    fi
+}
 
 mainloop
