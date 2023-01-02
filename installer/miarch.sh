@@ -26,7 +26,7 @@ git clone https://aur.archlinux.org/yay
 cd yay && makepkg -si
 cd ~ && rm -rf yay
 echo "[mi.sh]» installing core packages..."
-yay -S lynx base-devel man-db vim keepassxc mpv oh-my-zsh-git zsh nerd-fonts ttf-anonymus-pro noto-fonts noto-fonts-emoji
+yay -S lynx base-devel man-db vim keepassxc mpv oh-my-zsh-git zsh nerd-fonts ttf-anonymus-pro noto-fonts noto-fonts-emoji pavucontrol
 echo "[mi.sh]» making zsh the default shell..."
 echo "zsh" >> ~/.bashrc
 chsh -s $(which zsh)
@@ -48,7 +48,7 @@ lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjp
 sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama \
 ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 \
 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader
-    yay -S steam heroic-games-launcher krita blender ardour bottles lutris
+    yay -S steam heroic-games-launcher krita blender ardour bottles lutris gamescope
 else
     echo "[mi.sh]» did not install EXTRA packages."
 fi
