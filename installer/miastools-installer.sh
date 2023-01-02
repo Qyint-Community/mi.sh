@@ -10,6 +10,6 @@ echo "[mi.sh]» Cloning Bot Repo..."
 git clone https://github.com/Qyint-Community/miastools
 
 echo "[mi.sh]» installing dependencies..."
-python3 -m  pip install -U discord.py youtube_dl ytdl
+python3 -m  pip install -U discord.py
 
 echo "[mi.sh]» Make sure to add your Bot Token to `miastools.py`!"
