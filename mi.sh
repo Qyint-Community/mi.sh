@@ -12,14 +12,14 @@ source ./mi.conf
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v1.6.0 │"
+    echo "│ mi.sh │ │ v1.7.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v1.6.0 │"
+    echo "│   info   │        v1.7.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -641,6 +641,7 @@ installers () {
     echo "│ 1 │ mimux-termux-setup   │"
     echo "│ 2 │ miastools-installer  │"
     echo "│ 3 │ miarch               │"
+    echo "│ 4 │ waydroid-installer   │"
     echo "╰───┴──────────────────────╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
@@ -654,6 +655,10 @@ installers () {
     elif [ "$SELECT" == "3" ]; then
         installer_miarch
     elif [ "$SELECT" == "miarch" ]; then
+        installer_miarch
+    elif [ "$SELECT" == "4" ]; then
+        installer_miarch
+    elif [ "$SELECT" == "waydroid-installer" ]; then
         installer_miarch
     else
         select_failed
@@ -730,6 +735,25 @@ installer_mimux () {
         cd installer
         chmod +x miarch.sh
         ./miarch.sh
+    else
+        select_failed
+    fi
+}
+installer_waydroid () {
+    globalbar
+    echo "╭───────────────────────────────╮"
+    echo "│ waydroid-installer            │"
+    echo "├───────────────────────────────┤"
+    echo "╰───────────────────────────────╯"
+    echo "╭────────────────────────╮"
+    echo "│ Enter 'install' to run │"
+    echo "╰────────────────────────╯"
+    read -r -p " → " SELECT
+    if [ "$SELECT" == "install" ]; then
+        clear
+        cd installer
+        chmod +x waydroid-installer.sh
+        ./waydroid-installer.sh
     else
         select_failed
     fi
