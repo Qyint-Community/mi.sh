@@ -12,14 +12,14 @@ source ./mi.conf
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v2.0.0 │"
+    echo "│ mi.sh │ │ v2.1.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v2.0.0 │"
+    echo "│   info   │        v2.1.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -75,7 +75,7 @@ select_failed () {
 qyint_community_0 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ index │"
+    echo "│ qyint │ │ v4.5.0 │ │ index │"
     echo "╰───────╯ ╰────────╯ ╰───────╯"
     echo "╭─────────┬─────────────────────────────────╮"
     echo "│ welcome │                                 │"
@@ -137,7 +137,7 @@ qyint_community_0 () {
 qyint_community_select_failed () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ err │"
+    echo "│ qyint │ │ v4.5.0 │ │ err │"
     echo "╰───────╯ ╰────────╯ ╰─────╯"
     echo "╭──────────────────────────╮"
     echo "│ Input not recognized.    │"
@@ -150,7 +150,7 @@ qyint_community_select_failed () {
 qyint_community_1 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ community-feed │"
+    echo "│ qyint │ │ v4.5.0 │ │ community-feed │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭─────────────────────────────────────╮"
     echo "│ Sorry, the Community Feed is not    │"
@@ -176,7 +176,7 @@ qyint_community_1 () {
 qyint_community_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ social │"
+    echo "│ qyint │ │ v4.5.0 │ │ social │"
     echo "╰───────╯ ╰────────╯ ╰────────╯"
     echo "╭─────────┬────────────────────────────────────┬─╮" 
     echo "│ Revolt  │ https://rvlt.gg/j1hKjCw3           │ │"
@@ -200,7 +200,7 @@ qyint_community_2 () {
 qyint_community_3 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ links │"
+    echo "│ qyint │ │ v4.5.0 │ │ links │"
     echo "╰───────╯ ╰────────╯ ╰───────╯"
     echo "╭──────────────────────────────╮"
     echo "│       SELECT A SCRIPT!       │"
@@ -253,7 +253,7 @@ qyint_community_3 () {
 qyint_community_3_1 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ links/conversation rules │"
+    echo "│ qyint │ │ v4.5.0 │ │ links/conversation rules │"
     echo "╰───────╯ ╰────────╯ ╰──────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Rules arent copied here. │"
@@ -267,7 +267,7 @@ qyint_community_3_1 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ links/decision making │"
+    echo "│ qyint │ │ v4.5.0 │ │ links/decision making │"
     echo "╰───────╯ ╰────────╯ ╰───────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -281,7 +281,7 @@ qyint_community_3_2 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ links/world of war │"
+    echo "│ qyint │ │ v4.5.0 │ │ links/world of war │"
     echo "╰───────╯ ╰────────╯ ╰────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -295,7 +295,7 @@ qyint_community_3_2 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ links/minetest mods │"
+    echo "│ qyint │ │ v4.5.0 │ │ links/minetest mods │"
     echo "╰───────╯ ╰────────╯ ╰─────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -309,7 +309,7 @@ qyint_community_3_2 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ links/discord bot │"
+    echo "│ qyint │ │ v4.5.0 │ │ links/discord bot │"
     echo "╰───────╯ ╰────────╯ ╰───────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -323,7 +323,7 @@ qyint_community_3_2 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ links/warcraft ressources │"
+    echo "│ qyint │ │ v4.5.0 │ │ links/warcraft ressources │"
     echo "╰───────╯ ╰────────╯ ╰───────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -337,7 +337,7 @@ qyint_community_3_2 () {
 qyint_community_4 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ members │"
+    echo "│ qyint │ │ v4.5.0 │ │ members │"
     echo "╰───────╯ ╰────────╯ ╰─────────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
@@ -409,7 +409,7 @@ qyint_community_4 () {
 qyint_community_mish () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / mish │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / mish │"
     echo "╰───────╯ ╰────────╯ ╰──────────────╯"
     echo "╭──────┬────────────────────────────────────────╮"
     echo "│ mish │                                        │"
@@ -422,7 +422,7 @@ qyint_community_mish () {
     echo "╰───────────────────────────────────────────────╯"
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
-    echo "├─────────┴─────────────────────────────────────┤"
+    echo "├─────────┼─────────────────────────────────────┤"
     echo "│ E-Mail  │ mi-dot-sh@proton.me                 │"
     echo "│ Github  │ https://github.com/mi-dot-sh        │"
     echo "│ Discord │ mish#5694                           │"
@@ -463,7 +463,7 @@ qyint_community_mish () {
 qyint_community_mini () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / mini │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / mini │"
     echo "╰───────╯ ╰────────╯ ╰──────────────╯"
     echo "╭──────┬────────────────────────────────────────╮"
     echo "│ mini │                                        │"
@@ -477,8 +477,7 @@ qyint_community_mini () {
     echo "╰───────────────────────────────────────────────╯"
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
-    echo "├─────────┴─────────────────────────────────────┤"
-    echo "│ Discord │ MiniMina#9117                       │"
+    echo "├─────────┼─────────────────────────────────────┤"
     echo "│ Matrix  │ @mini-mina:matrix.org               │"
     echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
@@ -521,18 +520,18 @@ qyint_community_mini () {
 qyint_community_slake () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / slake │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / slake │"
     echo "╰───────╯ ╰────────╯ ╰───────────────╯"
-    echo "╭───────┬──────────────╮"
-    echo "│ slake │              │"
-    echo "├───────┴──────────────┤"
-    echo "│ Thighs, obviously    │"
-    echo "╰──────────────────────╯"
-    echo "╭─────────┬────────────╮"
-    echo "│ socials │            │"
-    echo "├─────────┴────────────┤"
-    echo "│ Discord │ Slake#9678 │"
-    echo "╰─────────┴────────────╯"
+    echo "╭───────┬───────────╮"
+    echo "│ slake │           │"
+    echo "├───────┴───────────┤"
+    echo "│ Thighs, obviously │"
+    echo "╰───────────────────╯"
+    echo "╭─────────┬────────╮"
+    echo "│ socials │        │"
+    echo "├─────────┼────────┤"
+    echo "│ Revolt  │ @Slake │"
+    echo "╰─────────┴────────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
     echo "╰──────────────────────────╯"
@@ -565,7 +564,7 @@ qyint_community_slake () {
 qyint_community_lanina () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.3.0 │ │ staff / lanina │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / lanina │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬──────────────────────────────────────╮"
     echo "│ lanina │                       [ she / they ] │"
@@ -579,8 +578,7 @@ qyint_community_lanina () {
     echo "╰───────────────────────────────────────────────╯"
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
-    echo "├─────────┴─────────────────────────────────────┤"
-    echo "│ Discord │ Lanina#6527                         │"
+    echo "├─────────┼─────────────────────────────────────┤"
     echo "│ Revolt  │ @Lanina                             │"
     echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
@@ -595,7 +593,7 @@ qyint_community_lanina () {
 qyint_community_eulenmensch () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / eulenmensch │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / eulenmensch │"
     echo "╰───────╯ ╰────────╯ ╰─────────────────────╯"
     echo "╭─────────────┬─────────────────────────────────╮"
     echo "│ eulenmensch │                                 │"
@@ -605,7 +603,7 @@ qyint_community_eulenmensch () {
     echo "╰───────────────────────────────────────────────╯"
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
-    echo "├─────────┴─────────────────────────────────────┤"
+    echo "├─────────┼─────────────────────────────────────┤"
     echo "│ Discord │ EulenMensch243#4422                 │"
     echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
@@ -620,7 +618,7 @@ qyint_community_eulenmensch () {
 qyint_community_linmax () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / linmax │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / linmax │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬──────────────────────────────────────╮"
     echo "│ linmax │                                      │"
@@ -630,7 +628,7 @@ qyint_community_linmax () {
     echo "╰───────────────────────────────────────────────╯"
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
-    echo "├─────────┴─────────────────────────────────────┤"
+    echo "├─────────┼─────────────────────────────────────┤"
     echo "│ Discord │ LinMax#5122                         │"
     echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
@@ -645,7 +643,7 @@ qyint_community_linmax () {
 qyint_community_lord_flo () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / lord_flo │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / lord_flo │"
     echo "╰───────╯ ╰────────╯ ╰──────────────────╯"
     echo "╭──────────┬────────────────────────────────────╮"
     echo "│ lord_flo │                                    │"
@@ -658,7 +656,7 @@ qyint_community_lord_flo () {
     echo "╰───────────────────────────────────────────────╯"
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
-    echo "├─────────┴─────────────────────────────────────┤"
+    echo "├─────────┼─────────────────────────────────────┤"
     echo "│ Discord │ Lord Flo#9204                       │"
     echo "│ Matrix  │ @lord_flo:matrix.org                │"
     echo "│ Revolt  │ @Lord_Flo                           │"
@@ -675,7 +673,7 @@ qyint_community_lord_flo () {
 qyint_community_dr4c0 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / dr4c0 │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / dr4c0 │"
     echo "╰───────╯ ╰────────╯ ╰───────────────╯"
     echo "╭───────┬────────────────────╮"
     echo "│ DR4C0 │                    │"
@@ -687,7 +685,7 @@ qyint_community_dr4c0 () {
     echo "╰────────────────────────────╯"
     echo "╭─────────┬──────────────────╮"
     echo "│ socials │                  │"
-    echo "├─────────┴──────────────────┤"
+    echo "├─────────┼──────────────────┤"
     echo "│ Discord │ DR4C0#5032       │"
     echo "╰─────────┴──────────────────╯"
     echo "╭──────────────────────────╮"
@@ -702,7 +700,7 @@ qyint_community_dr4c0 () {
 qyint_community_mjf () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / mjf │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / mjf │"
     echo "╰───────╯ ╰────────╯ ╰─────────────╯"
     echo "╭─────┬────╮"
     echo "│ MJF │    │"
@@ -711,7 +709,7 @@ qyint_community_mjf () {
     echo "╰──────────╯"
     echo "╭─────────┬──────────╮"
     echo "│ socials │          │"
-    echo "├─────────┴──────────┤"
+    echo "├─────────┼──────────┤"
     echo "│ Discord │ MJF#0516 │"
     echo "╰─────────┴──────────╯"
     echo "╭──────────────────────────╮"
@@ -726,7 +724,7 @@ qyint_community_mjf () {
 qyint_community_laudix () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / laudix │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / laudix │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬──────────────────────╮"
     echo "│ laudix │                      │"
@@ -735,7 +733,7 @@ qyint_community_laudix () {
     echo "╰───────────────────────────────╯"
     echo "╭─────────┬────────────────────────────╮"
     echo "│ socials │                            │"
-    echo "├─────────┴────────────────────────────┤"
+    echo "├─────────┼────────────────────────────┤"
     echo "│ Discord │ LAUDIX2010#8296            │"
     echo "│ Matrix  │ @laudixderechte:matrix.org │"
     echo "│ DC Com. │ https://dsc.gg/laudix      │"
@@ -756,7 +754,7 @@ qyint_community_laudix () {
 qyint_community_newmilitarily () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────────────╮"
-    echo "│ qyint │ │ v4.4.0 │ │ staff / newmilitarily │"
+    echo "│ qyint │ │ v4.5.0 │ │ staff / newmilitarily │"
     echo "╰───────╯ ╰────────╯ ╰───────────────────────╯"
     echo "╭───────────────┬───────────────╮"
     echo "│ newmilitarily │               │"
@@ -765,7 +763,8 @@ qyint_community_newmilitarily () {
     echo "╰───────────────────────────────╯"
     echo "╭─────────┬─────────────────────╮"
     echo "│ socials │                     │"
-    echo "├─────────┴─────────────────────┤"
+    echo "├─────────┼─────────────────────┤"
+    echo "│ Revolt  │ @newmilitarily      │"
     echo "│ Discord │ newmilitarily#6786  │"
     echo "╰─────────┴─────────────────────╯"
     echo "╭──────────────────────────╮"
@@ -864,9 +863,9 @@ installers () {
     elif [ "$SELECT" == "miarch" ]; then
         installer_miarch
     elif [ "$SELECT" == "4" ]; then
-        installer_miarch
+        installer_waydroid
     elif [ "$SELECT" == "waydroid-installer" ]; then
-        installer_miarch
+        installer_waydroid
     else
         select_failed
     fi
@@ -925,7 +924,7 @@ installer_miastools () {
         select_failed
     fi
 }
-installer_mimux () {
+installer_miarch () {
     globalbar
     echo "╭───────────────────────────────╮"
     echo "│ miarch                        │"
