@@ -12,14 +12,14 @@ source ./mi.conf
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v2.1.0 │"
+    echo "│ mi.sh │ │ v2.2.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v2.1.0 │"
+    echo "│   info   │        v2.2.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -33,6 +33,7 @@ mainloop () {
     echo "│ 2 │ qyint-pgp-keys     │ │"
     echo "│ 3 │ qyint-license      │ │"
     echo "│ 4 │ installers         │ │"
+    echo "│ 5 │ revolt-gradients   │ │"
     echo "╰───┴────────────────────┴─╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
@@ -51,6 +52,10 @@ mainloop () {
         installers
     elif [ "$SELECT" == "installers" ]; then
         installers
+    elif [ "$SELECT" == "5" ]; then
+        revolt_gradients
+    elif [ "$SELECT" == "revolt-gradients" ]; then
+        revolt_gradients
     else
         select_failed
     fi
@@ -963,6 +968,10 @@ installer_waydroid () {
     else
         select_failed
     fi
+}
+
+revolt_gradients () {
+    ./unimportant-other-scripts/revolt-gradients/base.sh
 }
 
 mainloop
