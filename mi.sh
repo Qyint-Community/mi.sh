@@ -12,14 +12,14 @@ source ./mi.conf
 globalbar () {
     clear
     echo "╭───────╮ ╭────────╮"
-    echo "│ mi.sh │ │ v2.2.0 │"
+    echo "│ mi.sh │ │ v3.0.0 │"
     echo "╰───────╯ ╰────────╯"
     echo ""
 }
 mainloop () {
     globalbar
     echo "╭──────────┬───────────────╮"
-    echo "│   info   │        v2.2.0 │"
+    echo "│   info   │        v3.0.0 │"
     echo "├──────────┼───────────────┤"
     echo "│ Ctrl + C │          quit │"
     echo "│ mi.conf  │   configurate │"
@@ -31,7 +31,7 @@ mainloop () {
     echo "╭───┬────────────────────┬─╮"
     echo "│ 1 │ qyint-community    │ │"
     echo "│ 2 │ qyint-pgp-keys     │ │"
-    echo "│ 3 │ qyint-license      │ │"
+    echo "│ 3 │ qyint-manifesto    │ │"
     echo "│ 4 │ installers         │ │"
     echo "│ 5 │ revolt-gradients   │ │"
     echo "╰───┴────────────────────┴─╯"
@@ -46,7 +46,7 @@ mainloop () {
         qyint_pgp_keys
     elif [ "$SELECT" == "3" ]; then
         qyint_license
-    elif [ "$SELECT" == "qyint-license" ]; then
+    elif [ "$SELECT" == "qyint-manifesto" ]; then
         qyint_license
     elif [ "$SELECT" == "4" ]; then
         installers
@@ -80,26 +80,24 @@ select_failed () {
 qyint_community_0 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ index │"
+    echo "│ qyint │ │ v5.0.0 │ │ index │"
     echo "╰───────╯ ╰────────╯ ╰───────╯"
     echo "╭─────────┬─────────────────────────────────╮"
     echo "│ welcome │                                 │"
     echo "├─────────┴─────────────────────────────────┤"
-    echo "│ Welcome to the Qyint-Community!           │"
-    echo "│ We are a group of Individuals who are     │"
-    echo "│ passionate about Social Sciences,         │"
-    echo "│ Technology and more.                      │"
-    echo "│ Most of us live in Germany and            │"
-    echo "│ can speak the Language.                   │"
-    echo "│ Our Community is a Place for open and     │"
-    echo "│ respectful Discussions, where Members can │"
-    echo "│ share their Knowledge, Experiences and    │"
-    echo "│ Perspectives on these Topics.             │"
-    echo "│ Whether you are a Tech Enthusiast,        │"
-    echo "│ a Social Science Scholar, or just someone │"
-    echo "│ who is curious about these Topics,        │"
-    echo "│ we welcome you to join us and be a Part   │"
-    echo "│ of this Community!                        │"
+    echo "│ Privacy and Freedom on the Internet are   │"
+    echo "│ no longer taken for granted in our        │"
+    echo "│ capitalistic Society, neither is          │"
+    echo "│ Democracy.                                │"
+    echo "│ Spying on Users, restricting their        │"
+    echo "│ Freedom and making Decisions for them is  │"
+    echo "│ simply more profitable for the Owners.    │"
+    echo "│ But we imagine a World withouta Profit    │"
+    echo "│ Incentive and with a truly democratic     │"
+    echo "│ System - and we will have to build it     │"
+    echo "│ ourselves.                                │"
+    echo "│ This Revolution has to take place on the  │"
+    echo "│ Internet aswell.                          │"
     echo "│                                           │"
     echo "│ The Version Number next to the Qyint-     │"
     echo "│ Header shows the ''Sync Number''.         │"
@@ -142,7 +140,7 @@ qyint_community_0 () {
 qyint_community_select_failed () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ err │"
+    echo "│ qyint │ │ v5.0.0 │ │ err │"
     echo "╰───────╯ ╰────────╯ ╰─────╯"
     echo "╭──────────────────────────╮"
     echo "│ Input not recognized.    │"
@@ -155,7 +153,7 @@ qyint_community_select_failed () {
 qyint_community_1 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ community-feed │"
+    echo "│ qyint │ │ v5.0.0 │ │ community-feed │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭─────────────────────────────────────╮"
     echo "│ Sorry, the Community Feed is not    │"
@@ -181,16 +179,13 @@ qyint_community_1 () {
 qyint_community_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ social │"
+    echo "│ qyint │ │ v5.0.0 │ │ social │"
     echo "╰───────╯ ╰────────╯ ╰────────╯"
     echo "╭─────────┬────────────────────────────────────┬─╮" 
     echo "│ Revolt  │ https://rvlt.gg/j1hKjCw3           │ │"
-    echo "│ Matrix  │ #qyint:matrix.org                  │ │"
-    echo "│ Discord │ https://dsc.gg/qyint               │ │"
+    echo "│ Github  │ https://github.com/Qyint-Community │ │"
     echo "│ YouTube │ https://www.youtube.com/@qyint     │ │"
     echo "│ Odysee  │ https://odysee.com/@qyint:c        │ │"
-    echo "│ Github  │ https://github.com/Qyint-Community │ │"
-    echo "│ Discord │ https://dsc.gg/qyint               │ │"
     echo "╰─────────┴────────────────────────────────────┴─╯"
     echo "╭──────────────────────────╮"
     echo "│ Sorry, there are no ways │"
@@ -205,14 +200,14 @@ qyint_community_2 () {
 qyint_community_3 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ links │"
+    echo "│ qyint │ │ v5.0.0 │ │ links │"
     echo "╰───────╯ ╰────────╯ ╰───────╯"
     echo "╭──────────────────────────────╮"
     echo "│       SELECT A SCRIPT!       │"
     echo "╰──────────────────────────────╯"
     echo "╭───┬────────────────────────┬─╮"
-    echo "│ 1 │ conversation rules     │ │"
-    echo "│ 2 │ decision making        │ │"
+    echo "│ 1 │ MANIFESTO              │ │"
+    echo "│ 2 │ GENERAL ASSEMBLY       │ │"
     echo "│ 3 │ world of war           │ │"
     echo "│ 4 │ minetest mods          │ │"
     echo "│ 5 │ discord bot            │ │"
@@ -229,11 +224,11 @@ qyint_community_3 () {
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
         qyint_community_3_1
-    elif [ "$SELECT" == "conversation rules" ]; then
+    elif [ "$SELECT" == "manifesto" ]; then
         qyint_community_3_1
     elif [ "$SELECT" == "2" ]; then
         qyint_community_3_2
-    elif [ "$SELECT" == "decision making" ]; then
+    elif [ "$SELECT" == "general assembly" ]; then
         qyint_community_3_2
     elif [ "$SELECT" == "3" ]; then
         qyint_community_3_3
@@ -245,7 +240,7 @@ qyint_community_3 () {
         qyint_community_3_4
     elif [ "$SELECT" == "5" ]; then
         qyint_community_3_5
-    elif [ "$SELECT" == "discord bot" ]; then
+    elif [ "$SELECT" == "revolt bot" ]; then
         qyint_community_3_5
     elif [ "$SELECT" == "6" ]; then
         qyint_community_3_6
@@ -256,13 +251,9 @@ qyint_community_3 () {
     fi
 }
 qyint_community_3_1 () {
-    globalbar
-    echo "╭───────╮ ╭────────╮ ╭──────────────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ links/conversation rules │"
-    echo "╰───────╯ ╰────────╯ ╰──────────────────────────╯"
+    clear
+    curl https://raw.githubusercontent.com/Qyint-Community/manifesto/main/qyint-manifesto.txt
     echo "╭──────────────────────────╮"
-    echo "│ Rules arent copied here. │"
-    echo "│ See our Website for it.  │"
     echo "│ Press any key to return. │"
     echo "│ Ctrl+C to exit.          │"
     echo "╰──────────────────────────╯"
@@ -271,12 +262,13 @@ qyint_community_3_1 () {
 }
 qyint_community_3_2 () {
     globalbar
-    echo "╭───────╮ ╭────────╮ ╭───────────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ links/decision making │"
-    echo "╰───────╯ ╰────────╯ ╰───────────────────────╯"
+    echo "╭───────╮ ╭────────╮ ╭────────────────────────╮"
+    echo "│ qyint │ │ v5.0.0 │ │ links/general assembly │"
+    echo "╰───────╯ ╰────────╯ ╰────────────────────────╯"
     echo "╭──────────────────────────╮"
-    echo "│ This isnt copied here.   │"
-    echo "│ See our Website for it.  │"
+    echo "│ https://rvlt.gg/VEd5De7t │"
+    echo "╰──────────────────────────╯"
+    echo "╭──────────────────────────╮"
     echo "│ Press any key to return. │"
     echo "│ Ctrl+C to exit.          │"
     echo "╰──────────────────────────╯"
@@ -286,7 +278,7 @@ qyint_community_3_2 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ links/world of war │"
+    echo "│ qyint │ │ v5.0.0 │ │ links/world of war │"
     echo "╰───────╯ ╰────────╯ ╰────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -300,7 +292,7 @@ qyint_community_3_2 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ links/minetest mods │"
+    echo "│ qyint │ │ v5.0.0 │ │ links/minetest mods │"
     echo "╰───────╯ ╰────────╯ ╰─────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -313,9 +305,9 @@ qyint_community_3_2 () {
 }
 qyint_community_3_2 () {
     globalbar
-    echo "╭───────╮ ╭────────╮ ╭───────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ links/discord bot │"
-    echo "╰───────╯ ╰────────╯ ╰───────────────────╯"
+    echo "╭───────╮ ╭────────╮ ╭──────────────────╮"
+    echo "│ qyint │ │ v5.0.0 │ │ links/revolt bot │"
+    echo "╰───────╯ ╰────────╯ ╰──────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
     echo "│ See our Website for it.  │"
@@ -328,7 +320,7 @@ qyint_community_3_2 () {
 qyint_community_3_2 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ links/warcraft ressources │"
+    echo "│ qyint │ │ v5.0.0 │ │ links/warcraft ressources │"
     echo "╰───────╯ ╰────────╯ ╰───────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ This isnt copied here.   │"
@@ -342,7 +334,7 @@ qyint_community_3_2 () {
 qyint_community_4 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ members │"
+    echo "│ qyint │ │ v5.0.0 │ │ members │"
     echo "╰───────╯ ╰────────╯ ╰─────────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
@@ -360,7 +352,7 @@ qyint_community_4 () {
     echo "│  8 │ dr4c0         │  nesmc. │"
     echo "│  9 │ mjf           │  member │"
     echo "│ 10 │ laudix        │  member │"
-    echo "│ 11 │ newmilitarily │  member │"
+    echo "│ 11 │ nm            │  member │"
     echo "╰────┴───────────────┴─────────╯"
     read -r -p " → " SELECT
     if [ "$SELECT" == "1" ]; then
@@ -404,9 +396,9 @@ qyint_community_4 () {
     elif [ "$SELECT" == "laudix" ]; then
         qyint_community_laudix
     elif [ "$SELECT" == "11" ]; then
-        qyint_community_newmilitarily
-    elif [ "$SELECT" == "newmilitarily" ]; then
-        qyint_community_newmilitarily
+        qyint_community_nm
+    elif [ "$SELECT" == "nm" ]; then
+        qyint_community_nm
     else
         qyint_community_select_failed
     fi
@@ -414,7 +406,7 @@ qyint_community_4 () {
 qyint_community_mish () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / mish │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / mish │"
     echo "╰───────╯ ╰────────╯ ╰──────────────╯"
     echo "╭──────┬────────────────────────────────────────╮"
     echo "│ mish │                                        │"
@@ -428,13 +420,13 @@ qyint_community_mish () {
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
     echo "├─────────┼─────────────────────────────────────┤"
+    echo "│ Revolt  │ mi.sh#2326                          │"
     echo "│ E-Mail  │ mi-dot-sh@proton.me                 │"
-    echo "│ Github  │ https://github.com/mi-dot-sh        │"
-    echo "│ Discord │ mish#5694                           │"
     echo "│ Matrix  │ @mi-dot-sh:matrix.org               │"
     echo "│ Session │ 05c5e12229ac6b428571bbdefedd5275443 │"
     echo "│         │ 296547c53048f19bf803c131775015e     │"
-    echo "│ Revolt  │ @mi.sh                              │"
+    echo "│ Github  │ @mi-dot-sh                          │"
+    echo "│ Twitch  │ @mi_dot_sh                          │"
     echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
@@ -468,7 +460,7 @@ qyint_community_mish () {
 qyint_community_mini () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / mini │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / mini │"
     echo "╰───────╯ ╰────────╯ ╰──────────────╯"
     echo "╭──────┬────────────────────────────────────────╮"
     echo "│ mini │                                        │"
@@ -483,15 +475,9 @@ qyint_community_mini () {
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
     echo "├─────────┼─────────────────────────────────────┤"
-    echo "│ Revolt  │ @MiniMina                           │"
+    echo "│ Revolt  │ MiniMina#0730                       │"
     echo "│ Matrix  │ @mini-mina:matrix.org               │"
     echo "╰─────────┴─────────────────────────────────────╯"
-    echo "╭──────────────────────────╮"
-    echo "│ Sorry, there are no ways │"
-    echo "│ to interact with this.   │"
-    echo "│ Press any key to return. │"
-    echo "│ Ctrl+C to exit.          │"
-    echo "╰──────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
     echo "╰──────────────────────────╯"
@@ -526,18 +512,18 @@ qyint_community_mini () {
 qyint_community_slake () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / slake │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / slake │"
     echo "╰───────╯ ╰────────╯ ╰───────────────╯"
     echo "╭───────┬───────────╮"
     echo "│ slake │           │"
     echo "├───────┴───────────┤"
     echo "│ Thighs, obviously │"
     echo "╰───────────────────╯"
-    echo "╭─────────┬────────╮"
-    echo "│ socials │        │"
-    echo "├─────────┼────────┤"
-    echo "│ Revolt  │ @Slake │"
-    echo "╰─────────┴────────╯"
+    echo "╭─────────┬────────────╮"
+    echo "│ socials │            │"
+    echo "├─────────┼────────────┤"
+    echo "│ Revolt  │ Slake#9515 │"
+    echo "╰─────────┴────────────╯"
     echo "╭──────────────────────────╮"
     echo "│     SELECT A SCRIPT!     │"
     echo "╰──────────────────────────╯"
@@ -570,7 +556,7 @@ qyint_community_slake () {
 qyint_community_lanina () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / lanina │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / lanina │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬───────────────────────────────────────╮"
     echo "│ lanina │                       [ she / they ]  │"
@@ -581,13 +567,11 @@ qyint_community_lanina () {
     echo "│ Tux is my Lord and Savior                      │"
     echo "│ Not-Sexist-Certification (bi)                  │"
     echo "│ autistic (very)                                │"
-    echo "│ Check the Website for CIA, Pentagon and NSU    │"
-    echo "│  Documents lol                                 │"
     echo "╰────────────────────────────────────────────────╯"
     echo "╭─────────┬──────────────────────────────────────╮"
     echo "│ socials │                                      │"
     echo "├─────────┼──────────────────────────────────────┤"
-    echo "│ Revolt  │ @Lanina                              │"
+    echo "│ Revolt  │ Lanina#1421                          │"
     echo "│ Fedi    │ @lanina@calckey.social               │"
     echo "╰─────────┴──────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
@@ -602,7 +586,7 @@ qyint_community_lanina () {
 qyint_community_eulenmensch () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / eulenmensch │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / eulenmensch │"
     echo "╰───────╯ ╰────────╯ ╰─────────────────────╯"
     echo "╭─────────────┬─────────────────────────────────╮"
     echo "│ eulenmensch │                                 │"
@@ -610,11 +594,6 @@ qyint_community_eulenmensch () {
     echo "│ Emma doesnt answer me                         │"
     echo "│ so you get an empty page. have fun. ~mish     │"
     echo "╰───────────────────────────────────────────────╯"
-    echo "╭─────────┬─────────────────────────────────────╮"
-    echo "│ socials │                                     │"
-    echo "├─────────┼─────────────────────────────────────┤"
-    echo "│ Discord │ EulenMensch243#4422                 │"
-    echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Sorry, there are no ways │"
     echo "│ to interact with this.   │"
@@ -627,7 +606,7 @@ qyint_community_eulenmensch () {
 qyint_community_linmax () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / linmax │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / linmax │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬──────────────────────────────────────╮"
     echo "│ linmax │                                      │"
@@ -635,11 +614,6 @@ qyint_community_linmax () {
     echo "│ Max doesnt answer me either.                  │"
     echo "│ Have fun with your empty page. ~mish          │"
     echo "╰───────────────────────────────────────────────╯"
-    echo "╭─────────┬─────────────────────────────────────╮"
-    echo "│ socials │                                     │"
-    echo "├─────────┼─────────────────────────────────────┤"
-    echo "│ Discord │ LinMax#5122                         │"
-    echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Sorry, there are no ways │"
     echo "│ to interact with this.   │"
@@ -652,7 +626,7 @@ qyint_community_linmax () {
 qyint_community_lord_flo () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭──────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / lord_flo │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / lord_flo │"
     echo "╰───────╯ ╰────────╯ ╰──────────────────╯"
     echo "╭──────────┬────────────────────────────────────╮"
     echo "│ lord_flo │                                    │"
@@ -666,9 +640,9 @@ qyint_community_lord_flo () {
     echo "╭─────────┬─────────────────────────────────────╮"
     echo "│ socials │                                     │"
     echo "├─────────┼─────────────────────────────────────┤"
-    echo "│ Discord │ Lord Flo#9204                       │"
+    echo "│ Revolt  │ Lord_Flo#2455                       │"
     echo "│ Matrix  │ @lord_flo:matrix.org                │"
-    echo "│ Revolt  │ @Lord_Flo                           │"
+    echo "│ Discord │ Lord Flo#9204                       │"
     echo "╰─────────┴─────────────────────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Sorry, there are no ways │"
@@ -682,7 +656,7 @@ qyint_community_lord_flo () {
 qyint_community_dr4c0 () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭───────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / dr4c0 │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / dr4c0 │"
     echo "╰───────╯ ╰────────╯ ╰───────────────╯"
     echo "╭───────┬────────────────────╮"
     echo "│ DR4C0 │                    │"
@@ -692,11 +666,6 @@ qyint_community_dr4c0 () {
     echo "│ Never gonna run around and │"
     echo "│  desert you!               │"
     echo "╰────────────────────────────╯"
-    echo "╭─────────┬──────────────────╮"
-    echo "│ socials │                  │"
-    echo "├─────────┼──────────────────┤"
-    echo "│ Discord │ DR4C0#5032       │"
-    echo "╰─────────┴──────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Sorry, there are no ways │"
     echo "│ to interact with this.   │"
@@ -709,7 +678,7 @@ qyint_community_dr4c0 () {
 qyint_community_mjf () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭─────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / mjf │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / mjf │"
     echo "╰───────╯ ╰────────╯ ╰─────────────╯"
     echo "╭─────┬────╮"
     echo "│ MJF │    │"
@@ -719,7 +688,7 @@ qyint_community_mjf () {
     echo "╭─────────┬──────────╮"
     echo "│ socials │          │"
     echo "├─────────┼──────────┤"
-    echo "│ Discord │ MJF#0516 │"
+    echo "│ Revolt  │ MJF#2185 │"
     echo "╰─────────┴──────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Sorry, there are no ways │"
@@ -733,7 +702,7 @@ qyint_community_mjf () {
 qyint_community_laudix () {
     globalbar
     echo "╭───────╮ ╭────────╮ ╭────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / laudix │"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / laudix │"
     echo "╰───────╯ ╰────────╯ ╰────────────────╯"
     echo "╭────────┬──────────────────────╮"
     echo "│ laudix │                      │"
@@ -743,9 +712,10 @@ qyint_community_laudix () {
     echo "╭─────────┬────────────────────────────╮"
     echo "│ socials │                            │"
     echo "├─────────┼────────────────────────────┤"
-    echo "│ Discord │ LAUDIX2010#8296            │"
+    echo "│ Revolt  │ LAUDIX#9347                │"
     echo "│ Matrix  │ @laudixderechte:matrix.org │"
     echo "│ DC Com. │ https://dsc.gg/laudix      │"
+    echo "│ Discord │ LAUDIX2010#8296            │"
     echo "│ TikTok  │ @laudixyt                  │"
     echo "│ Twitch  │ @laudix20                  │"
     echo "│ YouTube │ @laudix0                   │"
@@ -760,21 +730,20 @@ qyint_community_laudix () {
     read -n 1 -r -p " "
     qyint_community_0
 }
-qyint_community_newmilitarily () {
+qyint_community_nm () {
     globalbar
-    echo "╭───────╮ ╭────────╮ ╭───────────────────────╮"
-    echo "│ qyint │ │ v4.8.0 │ │ staff / newmilitarily │"
-    echo "╰───────╯ ╰────────╯ ╰───────────────────────╯"
-    echo "╭───────────────┬───────────────╮"
-    echo "│ newmilitarily │               │"
-    echo "├───────────────┴───────────────┤"
+    echo "╭───────╮ ╭────────╮ ╭────────────╮"
+    echo "│ qyint │ │ v5.0.0 │ │ staff / nm │"
+    echo "╰───────╯ ╰────────╯ ╰────────────╯"
+    echo "╭────┬──────────────────────────╮"
+    echo "│ nm │                          │"
+    echo "├────┴──────────────────────────┤"
     echo "│ This Page is currently empty. │"
     echo "╰───────────────────────────────╯"
     echo "╭─────────┬─────────────────────╮"
     echo "│ socials │                     │"
     echo "├─────────┼─────────────────────┤"
-    echo "│ Revolt  │ @newmilitarily      │"
-    echo "│ Discord │ newmilitarily#6786  │"
+    echo "│ Revolt  │ nm#2805             │"
     echo "╰─────────┴─────────────────────╯"
     echo "╭──────────────────────────╮"
     echo "│ Sorry, there are no ways │"
@@ -830,7 +799,7 @@ qyint_pgp_keys () {
 
 qyint_license () {
     clear
-    cat LICENSE
+    curl https://raw.githubusercontent.com/Qyint-Community/manifesto/main/qyint-manifesto.txt
     read -n 1 -r -p " "
     mainloop
 }

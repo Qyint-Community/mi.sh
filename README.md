@@ -14,4 +14,4 @@ Update Method 1: (recommended)
 There are no configuration Options at the Moment.
 
 # Licensing
-This Tool is published under the QYINT-LICENSE.
+This Tool is published under the GPLv3.
